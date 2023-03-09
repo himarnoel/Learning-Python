@@ -1,8 +1,8 @@
-from helper import validate_and_execute
+from helper import validate_and_execute, user_input_message
+
 user_input = ""
 while user_input != "exit":
-    user_input = input(
-        "Hey user, enter number of days and conversion:\n")
+    user_input = input(user_input_message)
     days_and_unit = user_input.split(":")
     days_and_unit_dictionary = {
         "days": days_and_unit[0],
