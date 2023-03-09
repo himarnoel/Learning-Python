@@ -1,6 +1,8 @@
 from helper import *
 import logging
-print(os.name)
+
+logger=logging.getLogger("MAIN")
+logger.error("Error occured")
 
 # user_input = ""
 # while user_input != "exit":
