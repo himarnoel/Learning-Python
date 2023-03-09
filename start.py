@@ -1,4 +1,4 @@
-import helper
+from helper import validate_and_execute
 user_input = ""
 while user_input != "exit":
     user_input = input(
@@ -8,5 +8,4 @@ while user_input != "exit":
         "days": days_and_unit[0],
         "units": days_and_unit[1]
     }
-   
-    helper.validate_and_execute(days_and_unit_dictionary)
+    validate_and_execute(days_and_unit_dictionary)
