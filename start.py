@@ -27,9 +27,6 @@ user_input = ""
 while user_input != "exit":
     user_input = input(
         "Enter a value for number of days and I conver it to hours:\n")
-    list_of_days = user_input.split(",")
-    print(set(list_of_days))
-    print(list_of_days)
-    
+    list_of_days = user_input.split(", ") 
     for num_of_days_element in set(user_input.split(",")):
         validate_and_execute()
